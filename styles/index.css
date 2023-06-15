@@ -1,0 +1,9 @@
+body {
+    background-color:darkcyan;
+}
+
+.contaiver {
+    width: 360px;
+    height: 800px;
+    background-color: var(--tg-theme-bg-color);
+}
