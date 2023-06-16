@@ -20,6 +20,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
+    font-size: 20px;
 }
 
 .heading.p {
@@ -40,6 +41,7 @@ body {
     border-radius: 13px 13px 13px 13px;
     font-style: re;
     border: rgb(68, 68, 68);
+    font-size: 18px;
 }
 
 .btn#num1 {
