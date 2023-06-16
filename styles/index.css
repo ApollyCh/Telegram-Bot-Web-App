@@ -1,9 +1,58 @@
 body {
-    background-color:darkcyan;
+    background-color: #EDF1F5;
 }
 
 .contaiver {
     width: 360px;
     height: 800px;
     background-color: var(--tg-theme-bg-color);
+}
+
+.heading {
+    width: 360px;
+    height: 71px;
+    border-radius: 0px 0px 13px 13px;
+    background-color: #40BA21;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 4px 4px rgb(113, 113, 113);
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.heading.p {
+    position: absolute;
+    top: 25px;
+}
+
+.btn {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    background-color: #40BA21;
+    width: 277px;
+    height: 72px;
+    position: absolute;
+    border-radius: 0px;
+    border-color: #40BA21;
+    box-shadow: 0px 4px 4px rgb(187, 187, 187);
+    border-radius: 13px 13px 13px 13px;
+    font-style: re;
+    border: rgb(68, 68, 68);
+}
+
+.btn#num1 {
+    top: 169px;
+    left: 33px;
+}
+
+.btn#num2 {
+    top: 267px;
+    left: 33px;
+}
+
+.btn#num3 {
+    top: 368px;
+    left: 33px;
 }
