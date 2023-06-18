@@ -6,3 +6,11 @@ let btn2 = document.getElementById('num2');
 
 btn1.style.left= `${vw /2 - 12 - 148}px`;
 btn2.style.left=`${vw/2 + 12}px`;
+
+btn1.addEventListener('click', function () {
+    location.href = './book_the_room.html';
+})
+
+btn2.addEventListener('click', function () {
+    location.href = './find_free_rooms.html';
+})
