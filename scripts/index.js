@@ -5,7 +5,6 @@ let btn1 = document.getElementById('num1');
 let btn2 = document.getElementById('num2');
 let btn3 = document.getElementById('num3');
 
-
 function btnLeft() {
     btn1.style.left = `${(vw / 2) - 138}px`;
     btn2.style.left = `${(vw / 2) - 138}px`;
@@ -13,5 +12,17 @@ function btnLeft() {
 }
 
 btnLeft()
+
+btn1.addEventListener('click', function () {
+    location.href = './find_free_rooms.html';
+})
+
+btn2.addEventListener('click', function () {
+    location.href = './book_the_room.html';
+})
+
+btn3.addEventListener('click', function () {
+    location.href = './cancel_out.html';
+})
 
 
