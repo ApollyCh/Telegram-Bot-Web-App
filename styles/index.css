@@ -21,6 +21,7 @@ body {
     top: 0px;
     left: 0px;
     font-size: 20px;
+    border: 0;
 }
 
 .heading.p {
@@ -42,20 +43,21 @@ body {
     border: rgb(68, 68, 68);
     font-size: 18px;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .btn#num1 {
-    top: 169px;
+    top: 25vh;
     left: 33px;
 }
 
 .btn#num2 {
-    top: 267px;
+    top: 45%;
     left: 33px;
 }
 
-.btn#num3 {
+/* .btn#num3 {
     top: 368px;
     left: 33px;
-}
+} */
 
