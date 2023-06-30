@@ -4,23 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IU Booking Rooms Bot</title>
-    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="styles/find_free_rooms.css" rel="stylesheet" type="text/css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+
+
 </head>
 <body>
     
     <div class="'container" id="container">
-        <div class="heading">
-            <p>IU Booking Room</p>
+        <button class="heading" id="heading">IU Booking Room</button>
+
+        <div class="btns">
+            <button class="btn" id="num1">Book the room</button>
+            <button class="btn" id="num2">Cancel out reservation</button>
         </div>
+        
+        <div id="selector">
+            <button class="little_button" id="lnum1">By hours</button>
+            <button class="little_button" id="lnum2">By date</button>
+        </div>
+        
+        <div id="durationpicker">
+            <p id="st">Start</p>
+            <form>
+                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="start">
+            </form>
+            
+            <p id="st">Duration</p>
+            <select name="select" id="hours">
+                <!--Supplement an id here instead of using 'name'-->
+                <option value="hour1" selected> 1 hour</option>
+                <option value="hour2">2 hours</option>
+                <option value="hour3">3 hours</option>
+                <option value="hour4">4 hours</option>
+                <option value="hour5">5 hours</option>
+                <option value="hour6">6 hours</option>
+                <option value="hour7">7 hours</option>
+                <option value="hour8">8 hours</option>
+              </select>
+
+            <!-- <form>
+                <input class="form-control" type="time" placeholder="Select duration" id="dur">
+            </form> -->
+        </div>
+
+        <div id="datetimepicker">
+            <p id="st">Start</p>
+            <form>
+                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="start2">
+            </form>
+            <p id="en">End</p>
+            <form>
+                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="end">
+            </form>
+        </div>
+
+
+        
+        <button class="btn" id="generate_rooms">Generate rooms</button>
+        
+    
+        <div class="rooms_container">
+            <button class="rooms" id="l301">Lecture Room #XXX (x!)</button>
+            <button class="rooms" id="l303">Lecture Room #XXX (x!)</button>
+            <button class="rooms" id="l304">Lecture Room #XXX (x!)</button>
+            <button class="rooms" id="l312">Lecture Room #XXX (x!)</button>
+            <button class="rooms" id="l314">Lecture Room #XXX (x!)</button>
+            <button class="rooms" id="m31">Meeting Room #X.X(x!)</button>
+            <button class="rooms" id="m32">Meeting Room #X.X (x!)</button>
+
+        </div>
+        
+
+
+        
 
     
     </div>
+    <script src="scripts/find_free_rooms.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         
 </body>
 </html>
