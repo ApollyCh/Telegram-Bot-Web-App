@@ -3,12 +3,12 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 
 let btn1 = document.getElementById('num1');
 let btn2 = document.getElementById('num2');
-let btn3 = document.getElementById('num3');
+// let btn3 = document.getElementById('num3');
 
 function btnLeft() {
     btn1.style.left = `${(vw / 2) - 138}px`;
     btn2.style.left = `${(vw / 2) - 138}px`;
-    btn3.style.left = `${(vw / 2) - 138}px`;
+    // btn3.style.left = `${(vw / 2) - 138}px`;
 }
 
 btnLeft()
@@ -21,8 +21,11 @@ btn2.addEventListener('click', function () {
     location.href = './book_the_room.html';
 })
 
-btn3.addEventListener('click', function () {
-    location.href = './cancel_out.html';
+// btn3.addEventListener('click', function () {
+//     location.href = './cancel_out.html';
+// })
+
+let head = document.getElementById('heading')
+head.addEventListener('click', function () {
+    location.href = './index.html';
 })
-
-
