@@ -29,3 +29,5 @@ let head = document.getElementById('heading')
 head.addEventListener('click', function () {
     location.href = './index.html';
 })
+
+document.getElementById('logo').style.left = `${vw / 2 - 80}px`;
