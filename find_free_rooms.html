@@ -36,7 +36,7 @@
         <div id="durationpicker">
             <p id="st">Start</p>
             <form>
-                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="start">
+                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="start" required>
             </form>
             
             <p id="st">Duration</p>
@@ -60,11 +60,11 @@
         <div id="datetimepicker">
             <p id="st">Start</p>
             <form>
-                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="start2">
+                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="start2" required>
             </form>
             <p id="en">End</p>
             <form>
-                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="end">
+                <input class="form-control" type="datetime-local" placeholder="Select date and time" id="end" required>
             </form>
         </div>
 
@@ -81,15 +81,17 @@
             <button class="rooms" id="l314">Lecture Room #XXX (x!)</button>
             <button class="rooms" id="m31">Meeting Room #X.X(x!)</button>
             <button class="rooms" id="m32">Meeting Room #X.X (x!)</button>
-
+                <button class="btn" id="reservation_button">Reserve the room</button>
         </div>
-        
 
-
-        
+    
 
     
     </div>
+    <!-- <div> 
+        <img src="figs/logo.png" alt="logo" id="logo">
+    </div> -->
+    
     <script src="scripts/find_free_rooms.js"></script>
     <!-- flatpickr -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
