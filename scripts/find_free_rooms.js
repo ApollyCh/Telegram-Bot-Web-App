@@ -37,6 +37,7 @@ lnum1.style.left=`${vw/2 - 12 - 200 + 60 + 60 + 10}px`;
 let lnum2 = document.getElementById('lnum2') ;
 lnum2.style.left=`${vw/2 - 12 - 140 + 7}px`;
 
+// document.getElementById('logo').style.left = `${vw / 2 - 80}px`;
 
 
 lnum1.addEventListener('click', function () {
@@ -79,6 +80,8 @@ let start_by_hour = document.getElementById("start")
 let end_by_date = document.getElementById("end");
 let hours = document.getElementById("hours")
 
+// reservation button
+let reservation_button = document.getElementById('reservation_button')
 
 generate_rooms.addEventListener('click', function () {
     let l301 = document.getElementById('l301');
@@ -98,6 +101,8 @@ generate_rooms.addEventListener('click', function () {
     let m32 = document.getElementById('m32');
     m32.style.visibility = 'visible';
 
+    reservation_button.style.visibility = 'visible'
+
     console.log(String(start_by_date.value).replace('T', ' ').replace(/-/g, ':'))
 
 }) 
@@ -105,3 +110,10 @@ generate_rooms.addEventListener('click', function () {
 // function checkRoom() {
     
 // }
+
+reservation_button.addEventListener('click', function () {
+
+    location.href = './index.html';
+})
+
+chooseColor("l301")
